@@ -73,6 +73,7 @@ public class EventCalendar {
             rdr.close();
         }
         catch (Exception ex) {
+            //Since this is a GUI, System.out isn't really appropriate.
             System.out.println("I was hoping that we wouldn't get here.");
         }
     }

@@ -157,6 +157,8 @@ public class NewJFrame extends javax.swing.JFrame {
          if (Ellipse.isSelected()){
             int a = Integer.parseInt(jTextField1.getText());
             int b = Integer.parseInt(jTextField2.getText());
+            //PT -- I want these exceptions in the Ellipse class, not here.
+            //      The ellipse should know what's a legal ellipse, not the UI. -5
             if (a <= 0 || b <= 0)
                 throw new NewExceptions();
             Ellipse el = new Ellipse(a, b);

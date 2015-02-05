@@ -30,6 +30,7 @@ public class Math {
     public double average(){
          double sum = 0;
          for (int i = 0; i < collection.size(); i++){
+             //PT -- sum =+ ? It works, but it's not quite what I'd want to see
            sum =+ sum + collection.get(i);
              }
          return sum/collection.size();
